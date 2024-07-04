@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main1.js"></script>
+   
+    <title>Noticias Adele</title>
+</head>
+<body>
+    <div class="header">
+        <img src="./imagenes/noticias logo.png" alt="logo noticiero">
+        <nav>
+            <ul>
+                <a href="https://www.adele.com/"><li>HOME</li></a> 
+                <a href="https://www.adele.com/"><li>NOSOTROS</li></a> 
+                <a href="https://www.adele.com/"><li>NOTICIAS</li></a>  
+                <a href="https://www.adele.com/"><li>CLUB DE FANS</li></a>  
+                <a href="https://www.adele.com/"><li>DONACIONES</li></a>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imagenes/img 1.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/img 2.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagenes/img 3.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+    <div class="contenedor">
+        
+        <!-- Primera noticia -->
+        <div class="noticias"> 
+            <img src="./imagenes/img 1.webp" alt="Adele y su esposo">
+            <h1>Adele se casó</h1>
+            <div id="contenido"> 
+                <p>
+                    Rich Paul, agente deportivo y representante de grandes estrellas del baloncesto, llegó a la vida de la cantante en el 2021 y, esta misma semana, la artista ha confesado que se han casado en secreto.  
+                </p>
+            </div>  
+            <button onclick='muestra_oculta("contenido")' class="btn btn-primary" form="contenido" >+</button>
+        </div>
+
+        <!-- Segunda noticia  -->
+        <div class="noticias">
+            <img src="./imagenes/Adele madre.webp" alt="Adele quiere ser madre">
+            <h1>¿Madre por segunda vez?</h1>
+            <div id="contenido2">
+                <p>
+                La británica quince veces ganadora de los premios Gammy, le confesó a sus fanáticos durante su reciente presentación en el Caesars Palace de Las Vegas, que tiene planeado embarazarse una vez que haya cumplido con todos sus compromisos y acabado su gira de conciertos.
+                </p>
+            </div>
+            <button onclick="muestra_oculta('contenido2')" class="btn btn-primary" form="contenido2" >+</button>
+        </div>  
+
+        <!-- Tercera noticia  -->
+        <div class="noticias">
+            <img src="./imagenes/Adele concierto.jpg" alt="Adele cancela conciertos">
+            <h1>Adele cancela conciertos</h1>
+            <div id="contenido3">    
+                <p>
+                    Adele cancela sus conciertos de marzo en Las Vegas por enfermedad; esto dijo la artista. 'Lamentablemente, tengo que tomar un descanso y detener mis conciertos en Las Vegas', escribió Adele en sus redes sociales.
+                </p>
+            </div>
+            <button onclick="muestra_oculta('contenido3')" class="btn btn-primary" form="contenido2" >+</button>
+        </div>
+    </div>
+
+    <footer>
+        <h6>
+            Conoce nuestra Política de privacidad | ©2022 The News. Todos los derechos reservados.
+        </h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
